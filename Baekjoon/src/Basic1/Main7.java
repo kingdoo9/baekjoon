@@ -1,4 +1,4 @@
-package Basic1;
+package Basic1; // 11718번
 //입력 받은 대로 출력하는 프로그램을 작성하시오.
 
 import java.util.Scanner;

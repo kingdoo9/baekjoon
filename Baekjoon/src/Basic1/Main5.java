@@ -1,4 +1,4 @@
-package Basic1;
+package Basic1; // 10172번
 //아래 예제와 같이 개를 출력하시오.
 
 public class Main5 {

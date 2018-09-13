@@ -1,4 +1,4 @@
-package Basic3;
+package Basic3; // 1924번
 //오늘은 2007년 1월 1일 월요일이다. 그렇다면 2007년 x월 y일은 무슨 요일일까? 이를 알아내는 프로그램을 작성하시오.
 import java.util.Scanner;
 

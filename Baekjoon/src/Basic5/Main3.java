@@ -1,4 +1,4 @@
-package Basic5;
+package Basic5; // 2448번
 //예제를 보고 별찍는 규칙을 유추한 뒤에 별을 찍어 보세요.
 import java.util.Scanner;
 
