@@ -21,14 +21,28 @@ public class Main4 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
+		Stack<Character> st = new Stack<>();
 
-		String string = sc.nextLine()+" ";
-		int Sum = 0;
-		int SUM = Integer.parseInt("2");
+		char[] ch = sc.next().toCharArray();
+		int ans=0, temp=1;
 		
-		System.out.println(SUM);
-
-
+		for(int i=0; i<ch.length; i++) {
+			if(ch[i]=='(' ||ch[i]=='[') {
+				//괄호가 열리면 temp에 값을 저장
+				temp = ch[i]=='('? temp*2:temp*3;
+				st.push(ch[i]);
+				//다음 문자가 괄호가 닫히는거라면 지금가지 연산한 값을 ans에 저장
+				if(ch[i]=='('&&ch[i+1]==')'||ch[i]=='['&&ch[i+1]==']') ans+=temp;
+			}else {
+				if(st.isEmpty()){ans=0; break;}//올바르지 않는 괄호열
+				//괄호가 닫히는 만큼 나누는 연산을 temp에 진행
+				if(ch[i]==')'&&st.peek()=='('||ch[i]==']'&&st.peek()=='[') {
+					temp=ch[i]==')'?temp/2:temp/3;
+					st.pop();
+				}else { ans=0; break;}
+			}
+		}
+		System.out.println(st.isEmpty()?ans:0);
 		sc.close();
 	}
 }
