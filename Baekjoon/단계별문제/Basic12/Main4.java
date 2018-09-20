@@ -9,7 +9,6 @@ package Basic12; // 11866번
 //예제와 같이 조세퍼스 순열을 출력한다.
 
 import java.util.Scanner;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 

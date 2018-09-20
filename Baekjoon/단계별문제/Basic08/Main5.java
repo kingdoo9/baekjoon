@@ -17,7 +17,7 @@ public class Main5 {
 		
 		for(int i=0; i<T; i++) {
 			int H = scan.nextInt();
-			int W = scan.nextInt();
+			int W = scan.nextInt(); //딱히 사용하지 않음
 			int N = scan.nextInt();
 			
 			int H_temp;
