@@ -1,4 +1,4 @@
-package Q1000; // 2557번
+package Q01000; // 2557번
 // Hello World!를 출력하시오.
 
 public class Main1 {
