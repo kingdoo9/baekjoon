@@ -43,7 +43,7 @@ public class Q1991 {
 
 	private static void preorder(String[][] tree, int i) { // 전위순회
 		System.out.print(tree[i][0]);
-		if(tree[i][1].charAt(0)!='.') {
+		if(tree[i][1].charAt(0)!='.') { //.이 아니라면 for문돌려서 자식노드가 루트인것을 찾음
 			for(int j=1; j<=26; j++) {
 				if(tree[i][1].matches(tree[j][0])) {
 					preorder(tree,j); break;
