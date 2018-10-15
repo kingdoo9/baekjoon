@@ -20,6 +20,8 @@ public class Main5 {
 			int W = scan.nextInt(); //딱히 사용하지 않음
 			int N = scan.nextInt();
 			
+			for(int j=0; j>W; j++) {} // 경고 없애기 위함
+			
 			int H_temp;
 			int W_temp;
 			
