@@ -1,4 +1,4 @@
-package Basic01; // 2557번
+package Basic01_Fin; // 2557번
 // Hello World!를 출력하시오.
 
 public class Q2557 {
